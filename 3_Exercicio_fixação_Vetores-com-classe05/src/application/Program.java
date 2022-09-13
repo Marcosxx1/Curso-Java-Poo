@@ -16,7 +16,7 @@ public class Program {
 
 		vetor.preenche(tamanho);
 		
-		vetor.encontraPar();
+		vetor.encontraMaior();
 		
 	}
 	

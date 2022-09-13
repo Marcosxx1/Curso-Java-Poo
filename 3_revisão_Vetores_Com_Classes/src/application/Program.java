@@ -11,8 +11,9 @@ public class Program {
 		Scanner in = new Scanner(System.in).useLocale(Locale.US);
 		Locale.setDefault(Locale.US);
 		
-		
+		System.out.println("Quantos: ");
 		int n = in.nextInt();
+		
 		Product[] product = new Product[n];
 		
 		for (int i = 0; i < product.length; i++) { 

@@ -9,16 +9,16 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in).useLocale(Locale.US);
 		
+		System.out.println("Quantos elementos vai ter o vetor?");
+		int size = in.nextInt();
 		
-		System.out.println("Quantos números você vai digitar?");
-		int tamanho = in.nextInt();
-		Vetor vetor = new Vetor(tamanho);
-
-		vetor.preenche(tamanho);
+		Vetor vetor = new Vetor(size);
 		
-		vetor.encontraPar();
+		vetor.preencheVetor();
+		double media = vetor.encontraMedia();
+		
+		System.out.println("MEDIA DO VETOR: "+media);
+ 
 		
 	}
-	
 }
- 

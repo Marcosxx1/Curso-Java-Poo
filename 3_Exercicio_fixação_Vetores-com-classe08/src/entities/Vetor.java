@@ -36,15 +36,23 @@ public class Vetor {
 	}
 	
 	public void encontraPar() {
-		System.out.println("NUMEROS PARES: ");
 		int count = 0;
+		int media = 0;
 		for (int i = 0; i < arr.length; i++) {
 			if(arr[i] % 2 == 0) {
-				System.out.print(arr[i] + " ");
+				
+				media +=arr[i];
 				count ++;
 			}
 		}
-		System.out.println("\nQUANTIDADE DE PARES = "+ count);
+		
+		if(count > 0) {
+			System.out.println("\nMEDIA DOS PARES = "+ media /count);
+
+		} else {
+			System.out.println("NENHUM NUMERO PAR");
+		}
+		
 	}
 	
 }

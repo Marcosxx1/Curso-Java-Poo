@@ -35,16 +35,27 @@ public class Vetor {
 		}
 	}
 	
-	public void encontraPar() {
-		System.out.println("NUMEROS PARES: ");
-		int count = 0;
+	public void encontraMaior() {
+		
+ 		int posicaoMaior = 0;
+		int primeiro = arr[0];
+		int segundo = arr[0];
+		
+		
 		for (int i = 0; i < arr.length; i++) {
-			if(arr[i] % 2 == 0) {
-				System.out.print(arr[i] + " ");
-				count ++;
+			if(primeiro > arr[i]) {
+				primeiro = arr[i];
+			} 
+			if(segundo < arr[i]) {
+
+				segundo = arr[i];
+				posicaoMaior = i;
+
 			}
 		}
-		System.out.println("\nQUANTIDADE DE PARES = "+ count);
+		System.out.println("MAIOR VALOR = "+ segundo);
+		System.out.println("MENOR VALOR = "+ primeiro);
+		System.out.println("\nPOSICAO DO MAIOR VALOR = "+ posicaoMaior);
 	}
 	
 }
